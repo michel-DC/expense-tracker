@@ -27,10 +27,10 @@ const AddToExpenses = () => {
   return (
     <div
       style={{
-        display: "flex",            
-        flexDirection: "column",    
-        alignItems: "center",       
-        justifyContent: "center",   
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
       }}
     >
       <div>
@@ -54,13 +54,18 @@ const AddToExpenses = () => {
         />
         <Divider mt={30} mb={20} />
         <Text
+          style={{
+            display: "flex",
+            textAlign: "left",
+          }}
           size="xl"
           weight={700}
+          color="white"
           sx={(theme) => ({
             color:
               theme.colorScheme === "dark"
-                ? theme.colors.dark[9]
-                : theme.colors.gray[0],
+                ? theme.colors.dark[0]
+                : theme.colors.gray[9],
           })}
         >
           Ajoutez une catégorie à vos dépenses
@@ -87,14 +92,14 @@ const AddToExpenses = () => {
               isused: "false",
             };
             console.log("hello");
-  
+
             setAvailableCategories((current) => [item, ...current]);
             return item;
           }}
         />
         <div style={{ display: "flex", alignItems: "center", marginTop: 20 }}>
           <Button
-          color="green"
+            color="green"
             mr={30}
             onClick={() => {
               if (label === "" || value <= 0 || Number.isNaN(value)) {
@@ -155,12 +160,14 @@ const AddToExpenses = () => {
                       removed = true;
                     }
                   });
-  
+
                   return arr;
                 });
                 removed
                   ? null
-                  : alert("La catégorie ne peut pas être supprimée car elle est utilisée.");
+                  : alert(
+                      "La catégorie ne peut pas être supprimée car elle est utilisée."
+                    );
               }
             }}
           >
@@ -171,7 +178,6 @@ const AddToExpenses = () => {
       </div>
     </div>
   );
-  
 };
 
 export default AddToExpenses;

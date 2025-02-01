@@ -15,22 +15,21 @@ const AddExpensePage = () => {
       <Text
         style={{
           display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
+          textAlign: "left",
+          marginLeft: window.innerWidth < 768 ? "0" : "585px",
         }}
         size="xl"
         weight={700}
         sx={(theme) => ({
           color:
             theme.colorScheme === "dark"
-              ? theme.colors.dark[9]
-              : theme.colors.gray[0],
+              ? theme.colors.dark[0]
+              : theme.colors.gray[9],
         })}
       >
         Ajouter une dépense
       </Text>
-      
+
       <Text
         style={{
           display: "flex",
@@ -48,7 +47,7 @@ const AddExpensePage = () => {
       >
         S'ajoute au montant de vos dépenses actuelles.
       </Text>
-      
+
       <AddToExpenses />
       <br />
       <Dividere />

@@ -14,8 +14,7 @@ const HomePage = () => {
     <PageContainer>
       {/* Displays the net balance of the user */}
       <Text
-      style={{ textAlign: "center" }}
-        size="xl"
+        style={{ textAlign: "center", fontSize: "2.5rem" }}
         weight={700}
         mb={20}
         sx={(theme: any) => ({
