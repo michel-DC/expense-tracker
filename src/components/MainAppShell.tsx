@@ -9,8 +9,7 @@ import {
   Navbar,
   Text,
   useMantineTheme,
-}
-from "@mantine/core";
+} from "@mantine/core";
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CiMoneyBill } from "react-icons/ci";
@@ -18,6 +17,7 @@ import { FaHome } from "react-icons/fa";
 import { MdOutlinePlaylistAdd } from "react-icons/md";
 import { MdOutlineAddchart } from "react-icons/md";
 import { IoEyeSharp } from "react-icons/io5";
+import DarkLightThemeButton from "./DarkLightThemeButton";
 import NavigationLink from "./NavigationLink";
 import HomePage from "../pages/HomePage";
 import AddBudgetPage from "../pages/AddBudgetPage";
@@ -60,6 +60,7 @@ const MainAppShell = () => {
                   theme.colorScheme === "dark"
                     ? theme.colors.dark[9]
                     : theme.colors.gray[0],
+                width: "100%",
               },
             })}
             navbarOffsetBreakpoint="sm"
@@ -71,43 +72,37 @@ const MainAppShell = () => {
                 hidden={!opened}
                 width={{ sm: 250, lg: 200 }}
               >
-
-                <div className="div-home" style={{ width: '100px' }}>
-                <NavigationLink
-                  label="Home"
-                  icon={<FaHome />}
-                  link="/"
-                />
-                <br />
+                <div className="div-home" style={{ width: "100px" }}>
+                  <NavigationLink label="Home" icon={<FaHome />} link="/" />
+                  <br />
                 </div>
 
                 <div>
-                <NavigationLink
-                  label="Ajouter une dépense"
-                  icon={<MdOutlineAddchart />}
-                  link="/newExpense"
-                />
-                <br />
+                  <NavigationLink
+                    label="Ajouter une dépense"
+                    icon={<MdOutlineAddchart />}
+                    link="/newExpense"
+                  />
+                  <br />
                 </div>
 
                 <div>
-                <NavigationLink
-                  label="Ajoutez/mettez à jour votre budget"
-                  icon={<MdOutlinePlaylistAdd />}
-                  link="/newBudget"
-                />
-                <br />
+                  <NavigationLink
+                    label="Ajoutez/mettez à jour votre budget"
+                    icon={<MdOutlinePlaylistAdd />}
+                    link="/newBudget"
+                  />
+                  <br />
                 </div>
 
                 <div>
-                <NavigationLink
-                  label="Afficher les dépenses dans les catégories"
-                  icon={<IoEyeSharp />}
-                  link="/categories"
-                />
-                <br />
+                  <NavigationLink
+                    label="Afficher les dépenses dans les catégories"
+                    icon={<IoEyeSharp />}
+                    link="/categories"
+                  />
+                  <br />
                 </div>
-
               </Navbar>
             }
             header={
@@ -146,17 +141,27 @@ const MainAppShell = () => {
                       height: "100%",
                     }}
                   >
-                    <CiMoneyBill />
-                    <div style={{ alignItems: 'center', display: 'flex' }}>
-                    <Text className="text-header" ml={770} style={{
-                      paddingLeft: '100px',
-                      display: 'flex',
-                      textAlign: 'center',
-                    }}>
-                   Traquez vos dépenses
-                    </Text>
+                    <CiMoneyBill
+                      style={{
+                        color: "white",
+                      }}
+                    />
+                    <div style={{ alignItems: "center", display: "flex" }}>
+                      <Text
+                        className="text-header"
+                        ml={770}
+                        style={{
+                          paddingLeft: "80px",
+                          display: "flex",
+                          textAlign: "center",
+                          color: "white",
+                        }}
+                      >
+                        Traquez vos dépenses
+                      </Text>
                     </div>
                   </div>
+                  <DarkLightThemeButton />
                 </div>
               </Header>
             }
