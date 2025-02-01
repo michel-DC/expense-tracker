@@ -143,7 +143,10 @@ const MainAppShell = () => {
                   >
                     <CiMoneyBill
                       style={{
-                        color: "white",
+                        color:
+                          theme.colorScheme === "dark"
+                            ? theme.colors.dark[0]
+                            : theme.colors.gray[9],
                       }}
                     />
                     <div style={{ alignItems: "center", display: "flex" }}>
@@ -154,7 +157,10 @@ const MainAppShell = () => {
                           paddingLeft: "80px",
                           display: "flex",
                           textAlign: "center",
-                          color: "white",
+                          color:
+                            theme.colorScheme === "dark"
+                              ? theme.colors.dark[0]
+                              : theme.colors.gray[9],
                         }}
                       >
                         Traquez vos dépenses

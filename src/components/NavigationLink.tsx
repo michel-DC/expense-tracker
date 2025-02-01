@@ -24,15 +24,13 @@ const NavigationLink = ({ icon, label, link }: NavigationLinkProps) => {
         "&:hover": {
           backgroundColor:
             theme.colorScheme === "dark"
-              ? theme.colors.dark[0]
-              : theme.colors.gray[9],
+              ? theme.colors.dark[9]
+              : theme.colors.gray[0],
         },
       })}
     >
       <Group>
-        <ThemeIcon variant="light" >
-          {icon}
-        </ThemeIcon>
+        <ThemeIcon variant="light">{icon}</ThemeIcon>
         <Text size="lg">{label}</Text>
       </Group>
     </UnstyledButton>
