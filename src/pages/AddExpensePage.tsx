@@ -13,10 +13,11 @@ const AddExpensePage = () => {
   return (
     <PageContainer>
       <Text
+        className="fixed"
         style={{
           display: "flex",
           textAlign: "left",
-          marginLeft: window.innerWidth < 768 ? "0" : "585px",
+          marginLeft: window.innerWidth < 200 ? "0" : "585px",
         }}
         size="xl"
         weight={700}
