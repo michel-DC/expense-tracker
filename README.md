@@ -1,174 +1,222 @@
-## Core Functionality
+# 🎨 **Expense Tracker** – Manage Your Finances Effectively
 
-### Context Management
+<div align="center">
+  <img src="https://via.placeholder.com/600x200?text=Expense+Tracker" alt="Expense Tracker Banner">
+</div>
 
-The application uses React Context API for state management through three main contexts:
+---
 
-1. **CategoriesContext**
+## 🌟 **Core Functionality**
 
-- Manages expense categories
-- Handles budget calculations
-- Tracks category amounts
+### 🛠 **Context Management**
 
-2. **HistoryContext**
+The application uses **React Context API** for state management through three main contexts:
 
-- Manages transaction history
-- Handles transaction creation and deletion
-- Maintains chronological order
+#### 📌 **CategoriesContext**
 
-3. **AvailableCategoriesContext**
+✅ Manages expense categories  
+✅ Handles budget calculations  
+✅ Tracks category amounts
 
-- Manages available expense categories
-- Handles category creation and deletion
-- Tracks category usage
+#### 📝 **HistoryContext**
 
-### Budget Operations
+✅ Manages transaction history  
+✅ Handles transaction creation and deletion  
+✅ Maintains chronological order
+
+#### 📂 **AvailableCategoriesContext**
+
+✅ Manages available expense categories  
+✅ Handles category creation and deletion  
+✅ Tracks category usage
+
+---
+
+## 💰 **Budget Operations**
 
 The application supports various budget operations:
 
-- Initial budget setting
-- Budget additions
-- Budget resets
-- Real-time balance calculations
+🔹 Initial budget setting  
+🔹 Budget additions  
+🔹 Budget resets  
+🔹 Real-time balance calculations
 
-### Expense Management
+---
+
+## 🧾 **Expense Management**
 
 Expenses can be:
 
-- Added with descriptions
-- Categorized
-- Tracked historically
-- Reset entirely
-- Deleted individually
+- ➕ Added with descriptions
+- 🗂 Categorized
+- 📈 Tracked historically
+- 🗑 Reset entirely
+- ❌ Deleted individually
 
-## Components
+---
 
-### Key Components
+## 🧩 **Components**
 
-1. **MainAppShell**
+### 🗝 **Key Components**
 
-- Main application layout
-- Navigation management
-- Theme switching
-- Responsive design
+#### 📍 **MainAppShell**
 
-2. **HistoryStack**
+- 🖥 Main application layout
+- 🧭 Navigation management
+- 🎨 Theme switching
+- 📱 Responsive design
 
-- Transaction history display
-- Scrollable transaction list
-- Transaction filtering
+#### 🕰 **HistoryStack**
 
-3. **DisplayCard**
+- 📜 Transaction history display
+- 🧾 Scrollable transaction list
+- 🔎 Transaction filtering
 
-- Reusable card component
-- Budget and expense display
-- Category amount display
+#### 💳 **DisplayCard**
 
-4. **AddToExpenses**
+- ♻️ Reusable card component
+- 💵 Budget and expense display
+- 📊 Category amount display
 
-- Expense addition form
-- Category selection
-- Amount validation
+#### ➕ **AddToExpenses**
 
-### Pages
+- 📝 Expense addition form
+- 📂 Category selection
+- ✅ Amount validation
 
-1. **HomePage**
+---
 
-- Overview of finances
-- Current balance
-- Recent transactions
+### 📄 **Pages**
 
-2. **AddExpensePage**
+#### 🏠 **HomePage**
 
-- Expense addition interface
-- Category management
-- Amount input
+- 💰 Overview of finances
+- 📊 Current balance
+- 🕒 Recent transactions
 
-3. **AddBudgetPage**
+#### 🧮 **AddExpensePage**
 
-- Budget management
-- Income addition
-- Budget reset options
+- ➕ Expense addition interface
+- 🗂 Category management
+- 🧾 Amount input
 
-4. **DisplayCategoriesPage**
+#### 💵 **AddBudgetPage**
 
-- Category overview
-- Category-wise expenses
-- Category management
+- 📅 Budget management
+- ➕ Income addition
+- ♻️ Budget reset options
 
-## State Management
+#### 🗃 **DisplayCategoriesPage**
 
-The application uses React Context API with local storage persistence for state management. This ensures that:
+- 📝 Category overview
+- 📊 Category-wise expenses
+- 🛠 Category management
 
-- Data persists across sessions
-- State is accessible throughout the application
-- Components can access and modify state as needed
+---
 
-## Styling
+## 🗄 **State Management**
 
-The application uses Mantine UI for styling with:
+The application uses **React Context API** with local storage persistence for state management. This ensures:
 
-- Responsive design principles
-- Dark/Light theme support
-- Consistent styling across components
-- Custom style overrides where needed
+✅ Data persists across sessions  
+✅ State is accessible throughout the application  
+✅ Components can access and modify state as needed
 
-## Screenshots
+---
 
-### Home Dashboard
+## 🎨 **Styling**
 
-![Home Dashboard](images-readme/1.png)
+The application uses **Mantine UI** for styling with:
 
-- Main dashboard showing current balance
-- Budget and expense overview cards
-- Recent transaction history
+- 📱 Responsive design principles
+- 🌙🌞 Dark/Light theme support
+- 🎨 Consistent styling across components
+- 🛠 Custom style overrides where needed
 
-### Expense Management
+---
 
-![Add Expense](images-readme/2.png)
+## 📷 **Screenshots**
 
-- Intuitive expense addition interface
-- Category selection dropdown
-- Amount input with validation
+### 🏠 **Home Dashboard**
 
-### Budget Management
+<div align="center">
+  <img src="images-readme/1.png" alt="Home Dashboard" width="600">
+</div>
 
-![Budget Management](images-readme/3.png)
+- 💰 Main dashboard showing current balance
+- 📊 Budget and expense overview cards
+- 🕒 Recent transaction history
 
-- Budget setting interface
-- Income addition form
-- Budget reset functionality
+---
 
-### Category Overview
+### 🧾 **Expense Management**
 
-![Categories](images-readme/4.png)
+<div align="center">
+  <img src="images-readme/2.png" alt="Add Expense" width="600">
+</div>
 
-- Category-wise expense breakdown
-- Visual representation of spending
-- Category management tools
+- 📝 Intuitive expense addition interface
+- 📂 Category selection dropdown
+- ✅ Amount input with validation
 
-### Transaction History
+---
 
-- Detailed transaction log
-- Chronological ordering
-- Transaction details modal
+### 💵 **Budget Management**
 
-### Dark/Light Theme
+<div align="center">
+  <img src="images-readme/3.png" alt="Budget Management" width="600">
+</div>
 
-- Toggle between dark and light modes
-- Consistent styling across themes
-- Enhanced visibility options
+- 🗓 Budget setting interface
+- ➕ Income addition form
+- ♻️ Budget reset functionality
 
-> Note: To see these screenshots in action, clone the repository and run the application locally following the installation instructions above.
+---
 
-## Contributing
+### 🗂 **Category Overview**
 
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
+<div align="center">
+  <img src="images-readme/4.png" alt="Categories" width="600">
+</div>
 
-## License
+- 📊 Category-wise expense breakdown
+- 📈 Visual representation of spending
+- 🛠 Category management tools
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+---
+
+### 🕒 **Transaction History**
+
+- 📜 Detailed transaction log
+- ⏳ Chronological ordering
+- 📝 Transaction details modal
+
+---
+
+### 🌙🌞 **Dark/Light Theme**
+
+- 🌓 Toggle between dark and light modes
+- 🎨 Consistent styling across themes
+- 👁️ Enhanced visibility options
+
+> **Note:** To see these screenshots in action, clone the repository and run the application locally following the installation instructions above.
+
+---
+
+## 🤝 **Contributing**
+
+1. 🍴 Fork the repository
+2. 🌱 Create a feature branch
+3. 📝 Commit your changes
+4. 🚀 Push to the branch
+5. 🔀 Create a Pull Request
+
+---
+
+## 📄 **License**
+
+This project is licensed under the **MIT License** – see the LICENSE file for details.
+
+<div align="center">
+  🚀 *Happy Budgeting!* 💵
+</div>
