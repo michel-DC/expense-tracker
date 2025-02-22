@@ -125,7 +125,7 @@ The application uses Mantine UI for styling with:
 
 ### Expense Management
 
-![Add Expense](./screenshots/add-expense.png)
+![Add Expense](images-readme/2.png)
 
 - Intuitive expense addition interface
 - Category selection dropdown
@@ -133,7 +133,7 @@ The application uses Mantine UI for styling with:
 
 ### Budget Management
 
-![Budget Management](./screenshots/budget-management.png)
+![Budget Management](images-readme/3.png)
 
 - Budget setting interface
 - Income addition form
@@ -141,7 +141,7 @@ The application uses Mantine UI for styling with:
 
 ### Category Overview
 
-![Categories](./screenshots/categories.png)
+![Categories](images-readme/4.png)
 
 - Category-wise expense breakdown
 - Visual representation of spending
@@ -149,15 +149,11 @@ The application uses Mantine UI for styling with:
 
 ### Transaction History
 
-![Transaction History](./screenshots/transaction-history.png)
-
 - Detailed transaction log
 - Chronological ordering
 - Transaction details modal
 
 ### Dark/Light Theme
-
-![Theme Toggle](./screenshots/theme-toggle.png)
 
 - Toggle between dark and light modes
 - Consistent styling across themes
