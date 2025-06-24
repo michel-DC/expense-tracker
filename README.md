@@ -1,7 +1,7 @@
 # 🎨 **Expense Tracker** – Manage Your Finances Effectively
 
 <div align="center">
-  <img src="https://via.placeholder.com/600x200?text=Expense+Tracker" alt="Expense Tracker Banner">
+  <img src="./images-readme/1.png" alt="Expense Tracker Banner">
 </div>
 
 ---
